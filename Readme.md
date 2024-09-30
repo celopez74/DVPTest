@@ -96,10 +96,34 @@ Entity Framework Core para acceso a datos
    ```bash
    dotnet test
    ```
-  
+   
 
 ## Información Adicional
-   * **Documentación del API**: La documentación del API está disponible en Swagger UI, accesible en http://localhost:5000/swagger cuando la aplicación esté en ejecución.
+   * **Documentación del API**: La documentación del API está disponible en Swagger UI, accesible en http://localhost:5000/swagger cuando la aplicación esté en ejecución en ambiente Local (ejecutada desde VS), cuando se ejecute desde dockerfile o docker-compose la url disponible es: http://localhost:5002/swagger.
+
+   Con el swagger se pueden obtener los endpoints disponibles en la aplicación, sin embargo la ejecución de los mismos requieren token de autenticación, el único endpoint que no requiere autenticación es el endpoint de Login con el cual se puede conseguir el token para acceder a los demás servicios.
+
+   http://localhost:5000/api/ms-DVP/v1/Login
+
+   ```bash
+      curl --location 'http://localhost:5000/api/ms-DVP/v1/Login' \
+      --header 'Content-Type: application/json' \
+      --data-raw '{
+         "email": "danileo@yopmail.com",
+         "password": "MyPassword$$$$"
+      }'
+   ```
+   ó
+   ```bash
+      curl --location 'http://localhost:5002/api/ms-DVP/v1/Login' \
+      --header 'Content-Type: application/json' \
+      --data-raw '{
+         "email": "danileo@yopmail.com",
+         "password": "MyPassword$$$$"
+      }'
+   ```
+
+   En el momento en que se crea un nuevo usuario ya como es dado de alta en Azure Active Directory, también es posible obtener sus propios token's con las credenciales de los usuarios creados desde el endpoint de creacion de usuario.
 
    * **Dockerfile**: Se realiza la creación de un archivo dockerfile que permite la ejecución de la aplicación en un contenedor, para probarlo de esta manera se hace neceario tener instaldo Docker Desktop.  
    Teniendo Docker desktop instalado ejecutar en la raíz del proyecto:
@@ -123,12 +147,7 @@ el archivo de configuración del environment Local se debe utilizar para probar 
 
 Vale la pena anotar servicios de SQL server Azure se encuentran detenidos ya que consumen solo por estar encendidos, por lo que si se quiere probar utilizando esta base de datos se deberia notificar al creador para que inicie el servicio, también puede ser necesario contar con la ip pública de donde se va a acceder a la base de datos ya que hay que agregarla como excepción en el firewall del sql para que permita su conexión.
 
-Si se desea utilizar la configuración del docker compose, se tomará como base el archivo de configuración del ambiente development el cual apunta a la base de datos levantada en el compose, en este caso, para poder probar correctamente en la tabla de Users de la base de datos recien levantada se debe hacer el siguiente insert
-```bash
-   INSERT INTO Users (Id, Name, Email, NickName, CreatedAt, IsEnable)
-   VALUES ('38f5f3a0-c89b-4328-9b74-82cdba359f16','Daniel Lopez', 'danileo@yopmail.com', 'danileo',getdate(),1)
-```
-
+Si se desea utilizar la configuración del docker compose, se tomará como base el archivo de configuración del ambiente development el cual apunta a la base de datos levantada en el compose.
 
 si al iniciar el docker compose puede ser necesario tener que detener el compose y volverlo a ejecutar ya que en la primera carga es posigle que los servicios de sql se estén actualizando y la aplicación no logre conectarse a la base de datos.
 

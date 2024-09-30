@@ -105,6 +105,9 @@ namespace DVP.Tasks.Infrastructure.Migrations
                 name: "IX_UserTask_UserId",
                 table: "UserTask",
                 column: "UserId");
+            
+            // Insertar registros necesario para poder usar token default
+            migrationBuilder.Sql("INSERT INTO Users (Id, Name, Email, NickName, CreatedAt, IsEnabled) VALUES ('38f5f3a0-c89b-4328-9b74-82cdba359f16','Daniel Lopez', 'danileo@yopmail.com', 'danileo',getdate(),1)");
         }
 
         /// <inheritdoc />
