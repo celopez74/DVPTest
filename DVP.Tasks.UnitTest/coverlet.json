@@ -1,0 +1,16 @@
+{
+    "include": [
+      "**/*.cs"
+    ],
+    "exclude": [
+      "[xunit.*]*",
+      "[NUnit]*",
+      "[Microsoft]*",
+      "[System]*",
+      "*/Migrations/*",
+      "*/Tests/*",
+      "*/obj/*",
+      "*/bin/*",
+      "DVP.Tasks.Infrastructure/Migrations/**"
+    ]
+}

@@ -1,0 +1,442 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.UnitTest/DVP.Tasks.UnitTest.csproj": {}
+  },
+  "projects": {
+    "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Api/DVP.Tasks.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Api/DVP.Tasks.Api.csproj",
+        "projectName": "DVP.Tasks.Api",
+        "projectPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Api/DVP.Tasks.Api.csproj",
+        "packagesPath": "/Users/usuario/.nuget/packages/",
+        "outputPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/usuario/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Domain/DVP.Tasks.Domain.csproj": {
+                "projectPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Domain/DVP.Tasks.Domain.csproj"
+              },
+              "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Infrastructure/DVP.Tasks.Infrastructure.csproj": {
+                "projectPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Infrastructure/DVP.Tasks.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "LazyCache": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[5.58.0, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.65.0, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.7.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Domain/DVP.Tasks.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Domain/DVP.Tasks.Domain.csproj",
+        "projectName": "DVP.Tasks.Domain",
+        "projectPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Domain/DVP.Tasks.Domain.csproj",
+        "packagesPath": "/Users/usuario/.nuget/packages/",
+        "outputPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/usuario/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Figgle": {
+              "target": "Package",
+              "version": "[0.5.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Infrastructure/DVP.Tasks.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Infrastructure/DVP.Tasks.Infrastructure.csproj",
+        "projectName": "DVP.Tasks.Infrastructure",
+        "projectPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Infrastructure/DVP.Tasks.Infrastructure.csproj",
+        "packagesPath": "/Users/usuario/.nuget/packages/",
+        "outputPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/usuario/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Domain/DVP.Tasks.Domain.csproj": {
+                "projectPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Domain/DVP.Tasks.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "LazyCache": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "LazyCache.AspNetCore": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[5.58.0, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.65.0, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.7.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.UnitTest/DVP.Tasks.UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.UnitTest/DVP.Tasks.UnitTest.csproj",
+        "projectName": "DVP.Tasks.UnitTest",
+        "projectPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.UnitTest/DVP.Tasks.UnitTest.csproj",
+        "packagesPath": "/Users/usuario/.nuget/packages/",
+        "outputPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.UnitTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/usuario/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Api/DVP.Tasks.Api.csproj": {
+                "projectPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Api/DVP.Tasks.Api.csproj"
+              },
+              "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Domain/DVP.Tasks.Domain.csproj": {
+                "projectPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Domain/DVP.Tasks.Domain.csproj"
+              },
+              "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Infrastructure/DVP.Tasks.Infrastructure.csproj": {
+                "projectPath": "/Users/usuario/Documents/PruebasTecnicas/CesarLopez/React dotNet Azure/dotNetBackEnd/TasksTest/DVP.Tasks.Infrastructure/DVP.Tasks.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "LazyCache": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.11.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.71, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

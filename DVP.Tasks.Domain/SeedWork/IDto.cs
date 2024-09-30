@@ -1,0 +1,6 @@
+namespace DVP.Tasks.Domain.SeedWork;
+
+public interface IDto
+{
+
+}
